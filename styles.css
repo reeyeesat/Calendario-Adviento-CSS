@@ -353,3 +353,95 @@ button {
   cursor: pointer;
   width: fit-content;
 }
+
+/*Dia 23*/
+.parallax {
+  /* La imagen de fondo */
+  background-image: url('vintage-red-christmas-tree-snowflake-christmas-festival-powerpoint-background_35ea106e9b__960_540.avif');
+  height: 300px;
+  width: 100%;
+  background-size: cover;
+  /*Fija la imagen al fondo*/
+  background-attachment: fixed;
+}
+
+.texto-central {
+  color: white;
+  text-align: center;
+  padding: 80px;
+}
+
+.contenido-normal {
+    font-size: 7px;
+}
+
+/*Dia 24*/
+
+
+/*Dia 25*/
+.dia25 h1{
+  color: orangered;
+  text-shadow: 
+        2px 2px 0px #b4ff04, 
+        3px 4px 0px #757575;
+}
+
+.dia25 p{
+  opacity: 0;
+}
+
+.dia25 p:hover{
+  opacity: 1;
+}
+/*Dia 26*/
+.cohete{
+  position: fixed; 
+  top: 0;            
+  left: 0;           
+  width: 100%; 
+  background-color: #34495e;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  z-index: 1000;  /* Asegura que esté por encima de todo */
+}
+
+/*Dia 27*/
+.propositos-form input{
+  padding: 5px;
+  margin-right: 5px;
+  border: 1px solid #848383;
+  outline: none;
+}
+
+.propositos-form input:invalid {
+  border: 1px solid red;
+}
+
+.propositos-form input:valid {
+  border: 1px solid #2ecc71;
+}
+
+/*Dia 28*/
+.columna {
+  background-color: #3498db;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #2980b9;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: 1fr; /* Una sola columna que ocupa todo el ancho */
+  gap: 10px;                 /* Espacio entre columnas */
+}
+
+
+/* Cuando la pantalla mide más de 768px, cambia a 3 columnas */
+@media (min-width: 768px) {
+  .contenedor {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
